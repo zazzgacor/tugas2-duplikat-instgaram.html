@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>log in instagram - Tugas 2 HTML</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .main-table {
+            width: 100%;
+            max-width: 935px;
+            margin: auto;
+            border-collapse: collapse;
+        }
+
+        /* Styling Poster Sisi Kiri */
+        .poster-title {
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 1.25;
+            color: #ffffff;
+            margin-top: 15px;
+            margin-bottom: 25px;
+            letter-spacing: -0.5px;
+        }
+
+        .poster-title span {
+            color: #e1306c;
+        }
+
+        .poster-img {
+            max-width: 300px;
+            width: 100%;
+            height: auto;
+            border-radius: 16px;
+        }
+
+        /* Pembatas Tengah */
+        .divider {
+            width: 1px;
+            background-color: #262626;
+        }
+
+        /* Styling Form Sisi Kanan */
+        .form-box {
+            width: 350px;
+            margin: 0 auto;
+        }
+
+        .form-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: #f5f5f5;
+            margin-bottom: 18px;
+        }
+
+        .input-field {
+            width: 100%;
+            background-color: #121212;
+            border: 1px solid #363636;
+            border-radius: 12px;
+            padding: 13px 16px;
+            color: #ffffff;
+            font-size: 14px;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        .input-field::placeholder {
+            color: #8e8e8e;
+        }
+
+        .input-field:focus {
+            border-color: #555555;
+        }
+
+        .btn-login {
+            display: block;
+            width: 100%;
+            background-color: #0064e0;
+            color: #ffffff;
+            text-decoration: none;
+            text-align: center;
+            font-weight: 600;
+            font-size: 14px;
+            padding: 12px 0;
+            border-radius: 20px;
+            transition: background-color 0.2s;
+        }
+
+        .btn-login:hover {
+            background-color: #0056b3;
+        }
+
+        .forgot-link {
+            color: #a8a8a8;
+            text-decoration: none;
+            font-size: 13px;
+        }
+
+        .forgot-link:hover {
+            text-decoration: underline;
+        }
+
+        .btn-facebook {
+            display: block;
+            width: 100%;
+            background-color: #1c1c1c;
+            color: #ffffff;
+            text-decoration: none;
+            text-align: center;
+            font-weight: 600;
+            font-size: 14px;
+            padding: 12px 0;
+            border-radius: 20px;
+            border: 1px solid #262626;
+        }
+
+        .btn-create {
+            display: block;
+            width: 100%;
+            background-color: transparent;
+            color: #0095f6;
+            text-decoration: none;
+            text-align: center;
+            font-weight: 600;
+            font-size: 14px;
+            padding: 11px 0;
+            border-radius: 20px;
+            border: 1px solid #0095f6;
+        }
+
+        .meta-footer {
+            color: #8e8e8e;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        /* Hak Cipta Sesuai Ketentuan */
+        .copyright-text {
+            color: #6e6e6e;
+            font-size: 11px;
+            margin-top: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <table class="main-table" border="0" cellpadding="0" cellspacing="0">
+        <tr valign="middle">
+            
+            <!-- Kolom Kiri: Branding & Poster -->
+            <td width="50%" align="center" style="padding: 30px 20px;">
+                <table border="0" cellpadding="0" cellspacing="0" width="85%">
+                    <tr>
+                        <td align="center">
+                            <!-- Logo Instagram -->
+                            <svg width="60" height="60" viewBox="0 0 24 24" fill="none">
+                                <defs>
+                                    <radialGradient id="ig-grad" cx="30%" cy="107%" r="130%">
+                                        <stop offset="0%" stop-color="#fdf497"/>
+                                        <stop offset="5%" stop-color="#fdf497"/>
+                                        <stop offset="45%" stop-color="#fd5949"/>
+                                        <stop offset="60%" stop-color="#d6249f"/>
+                                        <stop offset="90%" stop-color="#285AEB"/>
+                                    </radialGradient>
+                                </defs>
+                                <rect width="24" height="24" rx="6" fill="url(#ig-grad)"/>
+                                <rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="#ffffff" stroke-width="1.8"/>
+                                <circle cx="12" cy="12" r="4.5" fill="none" stroke="#ffffff" stroke-width="1.8"/>
+                                <circle cx="17" cy="7" r="1" fill="#ffffff"/>
+                            </svg>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <h1 class="poster-title">
+                                see everyday moment from you <span>close friend</span>.
+                            </h1>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <img class="poster-img" src="https://static.cdninstagram.com/rsrc.php/yJ/r/53X3pk-t2Gn.webp" alt="Tampilan Teman Dekat">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <div class="copyright-text"> &copy; </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+
+            <!-- Pembatas Tengah -->
+            <td class="divider"></td>
+
+            <!-- Kolom Kanan: Form Login -->
+            <td width="50%" align="center" style="padding: 30px 20px;">
+                <div class="form-box">
+                    <form action="#" method="post">
+                        <table border="0" cellpadding="6" cellspacing="0" width="100%">
+                            <!-- Logo Instagram Form Login -->
+                            <tr>
+                                <td align="left" style="padding-bottom: 8px;">
+                                    <svg width="45" height="45" viewBox="0 0 24 24" fill="none">
+                                        <defs>
+                                            <radialGradient id="ig-grad-form" cx="30%" cy="107%" r="130%">
+                                                <stop offset="0%" stop-color="#fdf497"/>
+                                                <stop offset="5%" stop-color="#fdf497"/>
+                                                <stop offset="45%" stop-color="#fd5949"/>
+                                                <stop offset="60%" stop-color="#d6249f"/>
+                                                <stop offset="90%" stop-color="#285AEB"/>
+                                            </radialGradient>
+                                        </defs>
+                                        <rect width="24" height="24" rx="6" fill="url(#ig-grad-form)"/>
+                                        <rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="#ffffff" stroke-width="1.8"/>
+                                        <circle cx="12" cy="12" r="4.5" fill="none" stroke="#ffffff" stroke-width="1.8"/>
+                                        <circle cx="17" cy="7" r="1" fill="#ffffff"/>
+                                    </svg>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="left">
+                                    <h2 class="form-title">log into instagram</h2>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="text" class="input-field" name="username" placeholder="Nomor ponsel, nama pengguna, atau email" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="password" class="input-field" name="password" placeholder="Kata sandi" required>
+                                </td>
+                            </tr>
+                            
+                            <!-- Tombol Masuk -->
+                            <tr>
+                                <td style="padding-top: 10px;">
+                                    <a href="#" class="btn-login">log in</a>
+                                </td>
+                            </tr>
+
+                            <!-- Lupa Kata Sandi -->
+                            <tr>
+                                <td align="center" style="padding: 10px 0;">
+                                    <a href="#" class="forgot-link">Lupa kata sandi?</a>
+                                </td>
+                            </tr>
+
+                            <!-- Tombol Masuk dengan Facebook -->
+                            <tr>
+                                <td style="padding-top: 4px;">
+                                    <a href="#" class="btn-facebook">&#128100; log in with facebook</a>
+                                </td>
+                            </tr>
+
+                            <!-- Tombol Buat Akun Baru -->
+                            <tr>
+                                <td style="padding-top: 10px;">
+                                    <a href="#" class="btn-create">create new account</a>
+                                </td>
+                            </tr>
+
+                            <!-- Logo Meta -->
+                            <tr>
+                                <td align="center" style="padding-top: 20px;">
+                                    <span class="meta-footer">&infin; Meta</span>
+                                </td>
+                            </tr>
+
+                            <!-- Hak Cipta -->
+                            <tr>
+                                <td align="center">
+                                    <div class="copyright-text"></div> &copy;</div>
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </td>
+
+        </tr>
+    </table>
+
+</body>
+</html>
